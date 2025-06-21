@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phishing URL Prediction</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Phishing URL Detection</h1>
+    <form method="post">
+      {% for field in [
+        'Having_IP_Address','URL_Length','Shortining_Service',
+        'Having_At_Symbol','Prefix_Suffix','SSLfinal_State',
+        'Domain_registeration_length','Favicon',
+        'HTTPS_token','Request_URL'
+      ] %}
+      <label for="{{ field }}">{{ field.replace('_',' ') }}</label>
+      <input type="number" id="{{ field }}" name="{{ field }}" required />
+      {% endfor %}
+      <button type="submit">Check URL</button>
+    </form>
+
+    {% if context != 'Rendering' %}
+    <div class="result">
+      <strong>Result:</strong> {{ context }}
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>
