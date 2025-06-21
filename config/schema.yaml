@@ -1,0 +1,80 @@
+columns:
+  - having_IP_Address: int
+  - URL_Length: int
+  - Shortining_Service: int
+  - having_At_Symbol: int
+  - double_slash_redirecting: int
+  - Prefix_Suffix: int
+  - having_Sub_Domain: int
+  - SSLfinal_State: int
+  - Domain_registeration_length: int
+  - Favicon: int
+  - port: int
+  - HTTPS_token: int
+  - Request_URL: int
+  - URL_of_Anchor: int
+  - Links_in_tags: int
+  - SFH: int
+  - Submitting_to_email: int
+  - Abnormal_URL: int
+  - Redirect: int
+  - on_mouseover: int
+  - RightClick: int
+  - popUpWidnow: int
+  - Iframe: int
+  - age_of_domain: int
+  - DNSRecord: int
+  - web_traffic: int
+  - Page_Rank: int
+  - Google_Index: int
+  - Links_pointing_to_page: int
+  - Statistical_report: int
+  - Result: int
+
+numerical_columns:
+  - web_traffic
+  - Page_Rank
+  - Links_pointing_to_page
+
+categorical_columns:
+  - having_IP_Address
+  - URL_Length
+  - Shortining_Service
+  - having_At_Symbol
+  - double_slash_redirecting
+  - Prefix_Suffix
+  - having_Sub_Domain
+  - SSLfinal_State
+  - Domain_registeration_length
+  - Favicon
+  - port
+  - HTTPS_token
+  - Request_URL
+  - URL_of_Anchor
+  - Links_in_tags
+  - SFH
+  - Submitting_to_email
+  - Abnormal_URL
+  - Redirect
+  - on_mouseover
+  - RightClick
+  - popUpWidnow
+  - Iframe
+  - age_of_domain
+  - DNSRecord
+  - Google_Index
+  - Statistical_report
+  - Result
+
+drop_columns: []
+
+# for data transformation
+num_features:
+  - web_traffic
+  - Page_Rank
+  - Links_pointing_to_page
+
+mm_columns:
+  - web_traffic
+  - Page_Rank
+  - Links_pointing_to_page
